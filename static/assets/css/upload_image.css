@@ -1,18 +1,19 @@
+* {
+	font-family: Raleway, Helvetica, sans-serif;
+}
+
 button {
-	background-color: orange;
+	background-color: #811331;
 	border: none;
 	color: black;
-	padding: 13px 62px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-weight: 700;
-	font-size: 18px;
 	cursor: pointer;
+	margin-left: 400px;
 }
-input {
-	font-size: 6.5px;
-}
+
 .labelclass {
 	font-size: 40px;
 }
@@ -22,7 +23,7 @@ input {
 .custom-file-input::before {
 	content: 'Select Image';
 	display: inline-block;
-	background: #b825d9;
+	background: #000080;
 	/*border: 1px solid #999;
   border-radius: 3px;*/
 	padding: 10px 15px;
@@ -31,12 +32,13 @@ input {
 	cursor: pointer;
 	font-weight: 700;
 	font-size: 15px;
+	border-radius: 5px;
 }
 .custom-file-input:hover::before {
 	border-color: black;
 }
 .custom-file-input:active::before {
-	background: #b825d9;
+	background: #000080;
 }
 table {
 	margin-left: auto;
@@ -45,13 +47,18 @@ table {
 td {
 	background-color: #2e3141;
 }
-h3 {
+h2 {
 	font-size: 25px;
 	color: #fff;
 }
 h1 {
 	color: #fff;
 }
+
+h4 {
+	color: #fff;
+}
+
 .header {
 	background-color: white;
 }
@@ -59,4 +66,12 @@ h1 {
 	position: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#wrapper .inner button {
+	margin: none;
+}
+
+form {
+	margin: 0;
 }

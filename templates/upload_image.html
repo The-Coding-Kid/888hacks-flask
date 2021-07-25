@@ -4,9 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/upload_image.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/upload_image.css') }}" />
+		<noscript
+			><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}"
+		/></noscript>
 		<title>Results</title>
 	</head>
-	<body style="background-color: #2e3141">
+	<body style="background-color: #2e3141; text-align: center">
 		<h1>Input Image:</h1>
 
 		<img src="{{ url_for('send_uploaded_file', filename=uploaded_image) }}" />
@@ -14,23 +18,34 @@
 		<table>
 			{% if containlen > 0%}
 			<tr>
-				<td><h3>Contains:</h3></td>
+				<td><h2>Contains:</h2></td>
 			</tr>
 			{%for contain in contained%}
 			<tr>
-				<td><h3>{{contain}}</h3></td>
+				<td><h4>{{contain}}</h4></td>
 			</tr>
 			{%endfor%} {% endif %} {% if notcontainlen > 0 %}
 			<tr>
-				<td><h3>Does not contain:</h3></td>
+				<td><h2>Does not contain:</h2></td>
 			</tr>
 			{%for ncontain in notcontained%}
 			<tr>
-				<td><h3>{{ncontain}}</h3></td>
+				<td><h4>{{ncontain}}</h4></td>
 			</tr>
 			{%endfor%} {% endif %}
 		</table>
 		<h1>Rating: {{stars}} stars</h1>
+		<button
+			style="
+				margin: 0;
+				height: 50px;
+				padding: 15px 10px 15px 10px;
+				border-radius: 5px;
+				background-color: #00008b;
+			"
+		>
+			<a href="/" style="text-align: center; text-decoration: none; color: white">Go Home</a>
+		</button>
 		<!--
     <table>
         {%for label in labels%}
