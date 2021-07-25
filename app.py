@@ -13,6 +13,9 @@ app.config["IMAGE_UPLOADS"] = os.getcwd()
 def home():
     return render_template("index.html")
 
+@app.route("/index")
+def index():
+  return render_template("index1.html")
 
 # Route to upload image
 @app.route('/upload-image', methods=['GET', 'POST'])
@@ -148,13 +151,13 @@ def send_uploaded_file(filename=''):
     return send_from_directory(app.config["IMAGE_UPLOADS"], filename)
 
 
-@app.route('/generics')
+@app.route('/upload')
 def generics():
-    return render_template("generic.html")
+    return render_template("upload.html")
 
 
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
