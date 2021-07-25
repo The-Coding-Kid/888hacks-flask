@@ -43,14 +43,14 @@ table {
 	margin-right: auto;
 }
 td {
-	background-color: white;
+	background-color: #2e3141;
 }
 h3 {
 	font-size: 25px;
-	color: #651e75;
+	color: #fff;
 }
 h1 {
-	color: #651e75;
+	color: #fff;
 }
 .header {
 	background-color: white;

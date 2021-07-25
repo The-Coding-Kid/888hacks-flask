@@ -4,9 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/upload_image.css') }}" />
-		<title>Test Image</title>
+		<title>Results</title>
 	</head>
-	<body>
+	<body style="background-color: #2e3141">
 		<h1>Input Image:</h1>
 
 		<img src="{{ url_for('send_uploaded_file', filename=uploaded_image) }}" />
