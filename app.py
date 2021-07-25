@@ -29,7 +29,7 @@ def upload_image():
             veggies = False
             fruits = False
             junk = False
-            stars = 0
+            stars = 2
 
             contained = []
             notcontained = []
